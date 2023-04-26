@@ -46,8 +46,12 @@ class Solution {
                 case 'D': num = 500; break;
                 case 'M': num = 1000; break;
             }
-            if (4 * num < ans) ans -= num;
-            else ans += num;
+            if (4 * num < ans){
+                ans -= num;
+            }
+            else{
+                ans += num;
+            }
         }
         return ans;
     }
